@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Prediction</title>
+</head>
+<style>
+    body {
+        background-color: rgb(226, 243, 243);
+    }
+h1{
+    color: brown;
+    
+}
+.container {
+    text-align: center;
+
+}
+textarea {
+    font-size: 15px;
+   
+    font-style: oblique;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 10%;
+    border: 1px solid black;
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+    background-color: cyan;
+}
+</style>
+<body>
+    <div class="container">  
+    <h1> Welcome to our Sentiment Analysis Web Application!</h1>
+    <form action="/prediction" method="post">
+         <textarea id="text" name="review" placeholder="Enter your review here" rows="6" cols="60"></textarea>
+         <br>
+        <button>Predict</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+        background-color: rgb(226, 243, 243);
+    }
+    .container {
+    
+    text-align: center;
+
+}
+button {
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 10%;
+    border: 1px solid black;
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+    background-color: cyan;
+}
+a {
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    <h1>Prediction:</h1>
+    
+    <h3>
+        {% if prediction[0] == 'Positive' %}
+            {{ prediction[0] }} : 🥳😍😍
+        {% elif prediction[0] == 'Negative' %}
+            {{ prediction[0] }} : 😡😡😡
+        {% else %}
+            {{ prediction[0] }}
+        {% endif %}
+    </h3>
+
+
+    
+    <button><a href="/">Go Back</a></button>
+
+</div>
+</body>
+</html>
